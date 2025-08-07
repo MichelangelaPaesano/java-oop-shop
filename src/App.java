@@ -8,6 +8,8 @@ public class App {
         System.out.println("Il prezzo base è: " + p1.prezzoBase());
 
         System.out.println("Il prezzo con iva è: " + p1.prezzoIva());
+
+        System.out.println("Il nome esteso è: " + p1.titolo());
     }
 
 }

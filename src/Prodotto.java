@@ -15,12 +15,12 @@ public class Prodotto {
         public Prodotto () {
             // creato il costruttore che deve avere stesso nome della classe 
             Random random = new Random();
-            codice = random.nextInt();
+            codice = random.nextInt(1000);
             System.out.println(codice);
-
+            
             prezzo = 25;
 
-            iva = 1.22;
+            nome = "rasoio";
         }
 
         //fuori dal costruttore scrivo il metodo per il prezzoBase perche' 
@@ -34,6 +34,11 @@ public class Prodotto {
         public double prezzoIva() {
             double tax = prezzo * 1.22;
             return tax;
+        }
+
+        public String titolo () {
+            String nomeProdotto = nome + codice;
+            return nomeProdotto;
         }
     }
 
