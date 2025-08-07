@@ -10,7 +10,7 @@ public class Prodotto {
 
         public int prezzo; 
 
-        public int iva; 
+        public double iva; 
 
         public Prodotto () {
             // creato il costruttore che deve avere stesso nome della classe 
@@ -20,7 +20,7 @@ public class Prodotto {
 
             prezzo = 25;
 
-            iva = 22;
+            iva = 1.22;
         }
 
         //fuori dal costruttore scrivo il metodo per il prezzoBase perche' 
